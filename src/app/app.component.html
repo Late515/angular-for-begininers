@@ -1,0 +1,12 @@
+<div>
+  <h1>Welcome to {{ data.title }}</h1>
+
+  <button width="300" (click)="onButtonClick()">Button</button>
+</div>
+<input
+  class="demo"
+  (keyup)="onKeyUp(titleInput.value)"
+  type="text"
+  [value]="data.title"
+  #titleInput
+/>
